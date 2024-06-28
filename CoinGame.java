@@ -29,9 +29,9 @@ public class CoinGame{
 	System.out.println("Heads: " + headscnt + ", Tails: " + tailscnt);
  
 	if(headscnt > tailscnt){
-	System.out.println("You won");
+	System.out.println(username +  " won!");
 	}else{
-	System.out.println("You lost");
+	System.out.println(username + " lost!");
 	}
     }
 }
