@@ -1,5 +1,5 @@
 import java.util.Random;
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class CoinGame{
     public static void main(String[] args){
@@ -8,11 +8,11 @@ public class CoinGame{
 	int headscnt = 0;
 	int tailscnt = 0;
 
-	//Scanner scanner = new Scanner(System.in);
-	//System.out.println("Who are you?");
-	//System.out.print(">");
-	//String username = scanner.nextLine();
-	//System.out.println("Hello, " + username + "!");
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Who are you?");
+	System.out.print(">");
+	String username = scanner.nextLine();
+	System.out.println("Hello, " + username + "!");
 	
 	System.out.println("Tossing a coin...");
 	for(int i=1;i<=3;i++){
@@ -29,10 +29,8 @@ public class CoinGame{
 	System.out.println("Heads: " + headscnt + ", Tails: " + tailscnt);
  
 	if(headscnt > tailscnt){
-	//  System.out.println(username + " won!");
 	System.out.println("You won");
 	}else{
-	//  System.out.println(username + " lost!");
 	System.out.println("You lost");
 	}
     }
